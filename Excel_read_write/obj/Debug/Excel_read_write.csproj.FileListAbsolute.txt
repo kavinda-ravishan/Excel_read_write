@@ -1,0 +1,8 @@
+C:\Users\Kavinda Ravishan\source\repos\Excel_read_write\Excel_read_write\obj\Debug\Excel_read_write.csprojAssemblyReference.cache
+C:\Users\Kavinda Ravishan\source\repos\Excel_read_write\Excel_read_write\obj\Debug\Excel_read_write.csproj.CoreCompileInputs.cache
+C:\Users\Kavinda Ravishan\source\repos\Excel_read_write\Excel_read_write\bin\Debug\Excel_read_write.exe.config
+C:\Users\Kavinda Ravishan\source\repos\Excel_read_write\Excel_read_write\bin\Debug\Excel_read_write.exe
+C:\Users\Kavinda Ravishan\source\repos\Excel_read_write\Excel_read_write\bin\Debug\Excel_read_write.pdb
+C:\Users\Kavinda Ravishan\source\repos\Excel_read_write\Excel_read_write\obj\Debug\Excel_read_write.exe
+C:\Users\Kavinda Ravishan\source\repos\Excel_read_write\Excel_read_write\obj\Debug\Excel_read_write.pdb
+C:\Users\Kavinda Ravishan\source\repos\Excel_read_write\Excel_read_write\obj\Debug\Excel_read_write.csproj.ResolveComReference.cache
