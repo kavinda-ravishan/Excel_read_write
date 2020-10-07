@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.Office.Interop.Excel;
+﻿using Microsoft.Office.Interop.Excel;
 using _Excel = Microsoft.Office.Interop.Excel;
 
 namespace Excel_read_write
@@ -15,6 +10,8 @@ namespace Excel_read_write
         Workbook wb;
         Worksheet ws;
 
+        public Excel() { }
+
         public Excel(string path, int sheet)
         {
             this.path = path;
@@ -22,12 +19,33 @@ namespace Excel_read_write
             ws = wb.Worksheets[sheet];
         }
 
-        public string ReadExcel(int i,int j)
+        public void CreatNewFile()
+        {
+            this.wb = excel.Workbooks.Add(XlWBATemplate.xlWBATWorksheet);
+            this.ws = wb.Worksheets[1];
+        }
+
+        public void CreatNewSheet()
+        {
+            Worksheet worksheet = wb.Worksheets.Add(After: ws);
+        }
+
+        public void SelectWorkSheet(int sheetNumber)
+        {
+            this.ws = wb.Worksheets[sheetNumber];
+        }
+
+        public void DeleteWorkSheet(int sheetNumber)
+        {
+            wb.Worksheets[sheetNumber].Delete();
+        }
+
+        public string ReadExcel(int i, int j)
         {
             i++;
             j++;
 
-            if(ws.Cells[i, j].Value2 != null)
+            if (ws.Cells[i, j].Value2 != null)
             {
                 return ws.Cells[i, j].Value2;
             }
@@ -37,7 +55,7 @@ namespace Excel_read_write
             }
         }
 
-        public void WriteToCell(int i,int j,string s)
+        public void WriteToCell(int i, int j, string s)
         {
             i++;
             j++;
